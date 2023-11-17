@@ -33,9 +33,10 @@ public class Threadsetget {
         B b1=new B();
         C c1=new C();
 
-        c1.setPriority(10);
-        b1.setPriority(5);
-        a1.setPriority(1);
+      
+        c1.setPriority(Thread.MAX_PRIORITY);
+        b1.setPriority(a1.getPriority()+1);
+        a1.setPriority(Thread.MIN_PRIORITY);
 
         a1.start();
         b1.start();

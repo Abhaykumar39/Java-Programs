@@ -8,7 +8,7 @@ class Prime_number {
         int n, i = 1, count = 0;
         System.out.println(" enter the number ");
         n = sc.nextInt();
-        System.out.println("this is prime number program")
+        System.out.println("this is prime number program");
         while (i <= n) {
             if (n % i == 0) {
                 count++;
